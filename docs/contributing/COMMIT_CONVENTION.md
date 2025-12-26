@@ -8,6 +8,10 @@
 
 This project follows the [Conventional Commits](https://www.conventionalcommits.org/) specification.
 
+### Language Policy
+
+**All commit messages must be written in English.** This ensures consistency across the codebase and makes the commit history accessible to all contributors.
+
 ### Commit Message Format
 
 ```
@@ -106,6 +110,10 @@ When using AI agents for development:
 
 このプロジェクトは [Conventional Commits](https://www.conventionalcommits.org/) 仕様に従います。
 
+### 言語ポリシー
+
+**すべてのコミットメッセージは英語で記述してください。** これにより、コードベース全体の一貫性が保たれ、すべてのコントリビューターがコミット履歴を理解しやすくなります。
+
 ### コミットメッセージの形式
 
 ```
@@ -144,37 +152,37 @@ When using AI agents for development:
 
 ### 例
 
-✅ **良いコミットメッセージ：**
+✅ **良いコミットメッセージ：**（英語で記述）
 
 ```
-feat(nanobanana_texture_gen): 頂点カラーベイクモードを追加
+feat(nanobanana_texture_gen): add vertex color bake mode
 
-- VERTEX_COLORを新しいベイクタイプオプションとして追加
-- 頂点ベイクのプレビューボタンを実装
-- トグルコントロール付きUIパネルを更新
+- Added VERTEX_COLOR as a new bake type option
+- Implemented preview button for vertex bake
+- Updated UI panel with toggle control
 ```
 
 ```
-fix(add_camera): アクティブカメラがない場合の処理を改善
+fix(add_camera): handle missing active camera gracefully
 
-以前はアクティブカメラが設定されていない場合にクラッシュしていました。
-現在はユーザーフレンドリーなエラーメッセージを表示します。
+Previously the operator would crash if no active camera was set.
+Now it displays a user-friendly error message.
 
 Closes #42
 ```
 
 ```
-docs(contributing): ブランチ戦略ガイドを追加
+docs(contributing): add branch strategy guide
 ```
 
 ```
-refactor(commons): ローカライズユーティリティを抽出
+refactor(commons): extract localization utilities
 ```
 
 ❌ **悪いコミットメッセージ：**
 
 ```
-修正
+修正                           # NG: 日本語で書かれている
 ```
 
 ```
@@ -182,11 +190,11 @@ WIP
 ```
 
 ```
-更新
+更新                           # NG: 日本語で書かれている
 ```
 
 ```
-feat: テクスチャ生成のための新機能を追加した
+feat: テクスチャ生成のための新機能を追加した   # NG: 日本語で書かれている
 ```
 
 ### AIエージェント向けガイドライン

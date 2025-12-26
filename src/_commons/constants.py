@@ -1,0 +1,3 @@
+ADDON_NAME = "Search Extension"
+ADDON_VERSION = "v1.0.4"
+ADDON_LABEL_SUFFIX = f" | {ADDON_NAME}"

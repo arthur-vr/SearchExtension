@@ -1,0 +1,8 @@
+---
+title: "Spec-First Development - Write Specification Before Implementation"
+tags: ["spec", "specification", "workflow", "documentation", "start"]
+simhash: "02e083190441fa35"
+created: "2025-12-25"
+---
+
+# Spec-First Development\n\n**Before implementing any feature, create a specification document first.**\n\n## Workflow\n\n1. Create a folder in `.agent/specs/<feature-name>/`\n2. Create `README.md` as the table of contents\n3. Add detailed spec files in the folder\n4. Then start implementation\n\n## Folder Structure\n\n```\n.agent/specs/\n└── <feature-name>/\n    ├── README.md           ← Table of contents (links to all files)\n    ├── overview.md         ← High-level description\n    ├── api-design.md       ← API/interface specs\n    ├── ui-flow.md          ← UI flow and interactions\n    ├── data-model.md       ← Data structures\n    └── edge-cases.md       ← Edge cases and error handling\n```\n\n## README.md Template\n\n```markdown\n# <Feature Name> Specification\n\n## Overview\nBrief description of the feature.\n\n## Documents\n\n| Document | Description |\n|----------|-------------|\n| [overview.md](./overview.md) | High-level description |\n| [api-design.md](./api-design.md) | API and interface design |\n| [ui-flow.md](./ui-flow.md) | User interaction flow |\n\n## Status\n- [ ] Specification complete\n- [ ] Implementation started\n- [ ] Implementation complete\n```\n\n## Rules\n\n- **All specs must be written in English**\n- Keep README.md as the entry point (table of contents)\n- Split complex specs into multiple files\n- Update specs when implementation reveals new requirements

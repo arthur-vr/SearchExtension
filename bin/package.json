@@ -1,0 +1,23 @@
+{
+  "name": "searchextension-build",
+  "version": "1.0.0",
+  "description": "Build script for searchExtension Blender addon",
+  "main": "build.ts",
+  "scripts": {
+    "build": "tsx build.ts",
+    "cli": "tsx commands/cli.ts"
+  },
+  "dependencies": {
+    "archiver": "^7.0.0",
+    "extract-zip": "^2.0.1",
+    "fs-extra": "^11.2.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.0",
+    "@types/fs-extra": "^11.0.0",
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.0.0"
+  }
+}

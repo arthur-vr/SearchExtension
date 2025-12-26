@@ -1,7 +1,7 @@
 bl_info = {
     "name": "searchExtension",
     "author": "SmileyCat",
-    "version": (1, 0, 1),
+    "version": (1, 0, 2),
     "blender": (5, 0, 0),
     "location": "Search > searchExtension",
     "description": "Collection of utility operators for F3 search",

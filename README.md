@@ -6,6 +6,8 @@ English:
 日本語:
 **Search Extension** は、ワークフローを効率化するために設計されたBlender用ユーティリティオペレーター集です。F3検索メニューからアクセスできる様々なツールを含み、シンプルな補助機能から高度なAIテクスチャ生成まで幅広く対応しています。
 
+![F3Search](docs/assets/images/f3search.png)
+
 ## Vision / ビジョン
 
 English:

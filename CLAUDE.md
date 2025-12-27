@@ -4,6 +4,27 @@
 # basic rules
 - after implementation, execute cd bin/;pnpm build to update zip
 
+# structure
+
+```
+├── bin/                  # Build scripts and output
+├── releases/             # Release zip files
+├── src/                  # Source code (Blender addon)
+│   ├── __init__.py       # Main addon registration
+│   ├── _commons/         # Shared utilities and constants
+│   └── <operator_name>/  # Each operator has its own folder
+│       ├── __init__.py   # Operator registration
+│       └── README.md     # (if exists) Operator documentation
+└── README.md             # Project documentation
+```
+
+## src/ folder structure
+
+Each folder under `src/` represents a Blender operator. The basic structure is:
+- `__init__.py` - Registers the operator with Blender
+
+**IMPORTANT**: If a `README.md` exists in an operator folder, READ IT FIRST before making any changes. The README contains important context and implementation details specific to that operator.
+
 ---
 
 # AI Rule System
@@ -61,22 +82,3 @@ Use descriptive, hyphenated names that are:
 - Use lowercase
 - Be specific but not too granular
 - Common categories: `blender`, `api`, `error`, `python`, `gemini`, etc.
-
-## Rule File Format
-
-```markdown
----
-title: "Rule Title"
-tags: ["tag1", "tag2"]
-simhash: "abc123..."
-created: "2024-01-01"
----
-
-## Problem/Topic
-
-Description...
-
-## Solution
-
-Details...
-```
